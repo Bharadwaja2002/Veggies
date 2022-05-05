@@ -70,7 +70,7 @@ p{
  background: #563434;
 }
 .header{
-    background: radial-gradient(#fff,#ffd6d6);
+    background: radial-gradient(#fff, #ffad33);
 }
 .header .row{
     margin-top: 70px;
@@ -136,7 +136,7 @@ h4{
 }
 /*---------------------offer-------------------*/
 .offer{
-     background: radial-gradient(#fff,#ffd6d6);
+     background: radial-gradient(#fff, #ffad33);
     margin-top: 80px;
     padding: 30px 0;
 }
@@ -164,7 +164,7 @@ small{
 }
 /*---------------------footer------------------*/
 .footer{
-       background: #000;
+       background: #804d00;
     color:#8a8a8a;
     font-size: 14px;
     padding: 60px 0 20px;
@@ -248,6 +248,7 @@ ul{
     }
 }
 /*----------------------------all products page--------------*/
+
 .row-2{
     justify-content: space-between;
     margin: 100px auto 50px;
@@ -376,7 +377,7 @@ th:last-child{
 /*----------------------account-page-----------------------*/
 .account-page{
     padding: 50px 0;
-    background: radial-gradient(#fff,#ffd6d6);
+    background: radial-gradient(#fff, #ffad33);;
     
 }
 .form-container{

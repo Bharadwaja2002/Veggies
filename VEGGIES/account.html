@@ -15,54 +15,69 @@
        <div class="logo">
         <img src="images/logo.png" width="250px">
         </div>
-        <nav>
+         <nav>
            <ul id ="MenuItems">
                <li><a href="index.html">HOME</a></li>
                <li><a href="products.html">PRODUCTS</a></li>
-               <li><a herf="">ABOUT</a></li>
+               <li><a href="productdetail.html">DETAIL</a></li>
                <li><a href="account.html">ACCOUNT</a></li>
             </ul>
         </nav>
-        <img src="images/cart.png" width="30px" height="30px">
+       <a href="cart.html"><img src="images/cart.png" width="30px" 
+                                 height="30px"></a>
+               
         <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">  
+        </div>
+        </div>
                    
-    </div> 
-    </div>
+     
+    
 <!--------------------account-page-------------------->
     <div class="account-page">
         <div class="container">
         <div class="row">
             <div class="col-2">
-            <img src="images/image1.png" width="100%">
-            </div>
-             <div class="col-2">
+            </div>       
+            <div class="col-2">
             <div class="form-container">
                  <div class="form-btn">
-                 <span onclick="login()">Login</span>
+                     <span onclick="login()">Login</span>
+                     
                      <span onclick="register()">Register</span>
-                     <hr id="Indicator">
-                </div>
-                <form id="LoginForm">
+                     <hr id="Indicator"></div>
+                
+                <form class="form" id="LoginForm" action="login.php" >
+                    <?php include('login.php') ?>
                     <input type="text" placeholder="Username">
                     <input type="password" placeholder="Password">
-                    <button type="submit" class="btn">Login</button>
+                    <div>
+                    <button type="submit" value="Login" name="save"class="btn btn-success">login
+                    </button>
+                    </div>
                     <a href="">Forgot password</a>
                 </form>
-                <form id="RegForm">
-                    <input type="text" placeholder="Username">
-                      <input type="email" placeholder="Email">
-                    <input type="password" placeholder="Password">
-                    <button type="submit" class="btn">Register</button>
-                   
-                </form>
-             </div>
+        <form class="form" action="register.php" method="post" id="RegForm">
+            <a><?php include('register.php')?></a>
+        <input type="text" class="login-input" name="username" placeholder="Username" required />
+        <input type="text" class="login-input" name="email" placeholder="Email Adress" required>
+        <input type="password" class="login-input" name="password" placeholder="Password" required>
+        <input id="submit" type="submit" name="save" value="Save" class="btn">
+        
+                </form></div>
             </div>
             </div>
         </div>
-    </div>
+           </div>
+        
+                  
+             
+            
+            
+        
+    
     
 <!----------------footer------------>
-    <div class="footer">
+  <div class="footer">
         <div class="container">
             <div class="row">
                <div class="footer-col-1">
@@ -96,10 +111,11 @@
                    </div>
              </div>
             <hr>
-            <p class="copyright">Copyright 2020  Daily Workers</p>
+            <p class="copyright">Copyright 2022 Daily Workers</p>
        </div>
     </div>
     </div>
+    
 <!--------------------------js for toggle menu----------------->
     <script>
     var MenuItems= document.getElementById("MenuItems");

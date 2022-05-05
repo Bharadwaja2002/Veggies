@@ -19,11 +19,13 @@
            <ul id ="MenuItems">
                <li><a href="index.html">HOME</a></li>
                <li><a href="products.html">PRODUCTS</a></li>
-               <li><a herf="">ABOUT</a></li>
+               <li><a href="productdetail.html">DETAIL</a></li>
                <li><a href="account.html">ACCOUNT</a></li>
-            </ul>
+              </ul>
         </nav>
-        <img src="images/cart.png" width="30px" height="30px">
+        <a href="cart.html"><img src="images/cart.png" width="30px" 
+                                 height="30px"></a>
+        
         <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">  
                    
     </div> 
@@ -40,64 +42,61 @@
         <tr>
              <td>
               <div class="cart-info">
-                 <img src="images/buy-1.jpg">
+                 <img src="images/product-2.jpg">
                   <div>
-                  <p>Red Printed Tshirt</p>
+                  <p>Green Chilli</p>
                       <small>Price: RS 500</small>
                      <br> 
                   <a href="">Remove</a>
                   </div>
                  </div>
             </td>
-             <td><input type="number" value="1"></td>
-             <td>Rs 500</td>
+             <td><input type="number" value="1" class="green_chilly_price"></td>
+             <td class="value">Rs 0</td>
         </tr>
            <tr>
              <td>
               <div class="cart-info">
-                 <img src="images/buy-2.jpg">
+                 <img src="images/product-8.jpg">
                   <div>
-                  <p>Red Printed Tshirt</p>
+                  <p>Watermelon</p>
                       <small>Price: RS 500</small>
                      <br> 
                   <a href="">Remove</a>
                   </div>
                  </div>
             </td>
-             <td><input type="number" value="1"></td>
-             <td>Rs 500</td>
+             <td><input type="number" value="1" class="watermelon_price"></td>
+             <td class="value2">Rs 0</td>
         </tr>
            <tr>
              <td>
               <div class="cart-info">
-                 <img src="images/buy-3.jpg">
+                 <img src="images/product-5.jpg">
                   <div>
-                  <p>Red Printed Tshirt</p>
+                  <p>cabbage</p>
                       <small>Price: RS 500</small>
                      <br> 
                   <a href="">Remove</a>
                   </div>
                  </div>
             </td>
-             <td><input type="number" value="1"></td>
-             <td>Rs 500</td>
+             <td><input type="number" value="1" class="cabbage_price"></td>
+             <td class="value3">Rs 0</td>
         </tr>
-        
+        <tr>
+            <td>
+                <button class="submit">Submit</button>
+            </td>
+        </tr>        
         </table>
+
         <div class="total-price">
          <table>
             <tr>
-             <td>Subtotal</td>
-             <td>Rs200</td>
-            </tr>
-             <tr>
-             <td>Tax</td>
-             <td>Rs30</td>
-             </tr>
-             <tr>
              <td>Total</td>
-                 <td>Rs 230</td>
-             </tr>
+             <td class="subtotal">Rs0</td>
+            </tr>
             </table>
         </div>
     </div>
@@ -138,7 +137,7 @@
                    </div>
              </div>
             <hr>
-            <p class="copyright">Copyright 2020  Daily Workers</p>
+            <p class="copyright">Copyright 2022  Daily Workers</p>
        </div>
     </div>
     </div>
@@ -160,4 +159,5 @@
         }
     </script> 
 </body>
+<script src="script.js"></script>
 </html>
